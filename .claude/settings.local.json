@@ -1,9 +1,0 @@
-{
-  "permissions": {
-    "allow": [
-      "Bash(Get-ChildItem -Path \"G:\\\\ajkeStudy\\\\StudyBridge \\(1\\)\\\\StudyBridge\" -Directory)",
-      "Bash(Select-Object Name)",
-      "Bash(grep -E \"\\\\.env|\\\\.js$|\\\\.json$\")"
-    ]
-  }
-}
