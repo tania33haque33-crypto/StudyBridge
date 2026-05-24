@@ -41,3 +41,5 @@ yarn-error.log*
 # Production
 /backend/dist
 /frontend/dist
+
+.claude/
