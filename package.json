@@ -1,0 +1,25 @@
+{
+  "name": "studybridge",
+  "version": "1.0.0",
+  "description": "Comprehensive Study Abroad Platform",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=\"--no-deprecation\" concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start"
+  },
+  "keywords": [
+    "study-abroad",
+    "education",
+    "international-students"
+  ],
+  "author": "StudyBridge Team",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "cross-env": "^10.1.0"
+  }
+}

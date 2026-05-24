@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "defaultMode": "auto",
+    "allow": [
+      "Bash(npm:*)",
+      "Bash(node:*)",
+      "Read",
+      "Write",
+      "Edit"
+    ]
+  },
+  "env": {
+    "NODE_ENV": "development"
+  },
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "SessionStart",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /f/StudyBridge && npm run dev > /dev/null 2>&1 &",
+            "async": true,
+            "statusMessage": "Starting StudyBridge dev server..."
+          }
+        ]
+      }
+    ]
+  }
+}
